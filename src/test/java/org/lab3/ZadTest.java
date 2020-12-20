@@ -6,6 +6,7 @@ import org.junit.jupiter.api.Test;
 class ZadTest {
 	Intern intern = new Intern("name", "surname", "birthdate");
 	WhiteCollar whiteCollar = new WhiteCollar("name", "surname", "birthdate");
+	BoardMember boardMember = new BoardMember("name", "surname", "birthdate");
 	@Test
 	void testCalculateSalaryEquals() {
 		double result = intern.calculateSalary();
@@ -54,5 +55,15 @@ class ZadTest {
 	void testSetPercentageBonus() {
 		whiteCollar.setPercentageBonus(123.23);
 		assertEquals(123.23, whiteCollar.getPercentageBonus());
+	}
+	@Test
+	void testSetAssistant() {
+		boardMember.setAssistant("test");
+		assertEquals("test", boardMember.getAssistant());
+	}
+	@Test
+	void testSetBoardMeetingCounter() {
+		boardMember.setBoardMeetingCounter(3);
+		assertEquals(3, boardMember.getBoardMeetingCounter());
 	}
 }
