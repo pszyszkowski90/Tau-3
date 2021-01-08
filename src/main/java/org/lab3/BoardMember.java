@@ -10,12 +10,12 @@ public class BoardMember extends Employee {
 		super(name, surname, birtdate);
 	}
 
-	public void getInformation() {
+	public String getInformation() {
 		super.getInformation();
 		System.out.println("Pensja: " + salary);
 		System.out.println("Asystent: " + assistant);
 		System.out.println("Ilość spotkań rady nadzorczej: " + boardMeetingCounter);
-
+		return "Pensja: " + salary;
 	}
 
 	public double calculateSalary() {

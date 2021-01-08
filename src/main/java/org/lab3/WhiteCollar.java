@@ -10,13 +10,14 @@ public class WhiteCollar extends Employee {
 	public WhiteCollar(String name, String surname, String birtdate) {
 		super(name, surname, birtdate);
 	}
-	public void getInformation() {
+	public String getInformation() {
 		super.getInformation();
 		System.out.println("Kierownik: " + manager);
 		System.out.println("Pensja: " + salary);
 		System.out.println("Procent premii: " + percentageBonus);
 		System.out.println("Numer telefonu: " + phoneNmber);
 		System.out.println("Numer pokoju: "+ roomNumber);
+		return "Kierownik: " + manager;
 	}
 
 	public double calculateSalary () {

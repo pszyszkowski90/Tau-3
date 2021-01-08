@@ -11,10 +11,11 @@ public abstract class Employee implements ICaneBeAEmployee {
 		this.birthdate = birtdate;
 	}
 
-	public void getInformation() {
+	public String getInformation() {
 		System.out.println("Imię: " + name);
 		System.out.println("Nazwisko: " + surname);
 		System.out.println("Data urodzenia: " + birthdate );
+		return "Imię: " + name;
 	}
 
 	public String getName() {

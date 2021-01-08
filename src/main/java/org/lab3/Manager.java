@@ -12,7 +12,7 @@ public class Manager extends Employee {
 	public Manager(String name, String surname, String birtdate) {
 		super(name, surname, birtdate);
 	}
-	public void getInformation() {
+	public String getInformation() {
 		super.getInformation();
 		System.out.println("Kierownik działu: " + department);
 		System.out.println("Pensja: " + salary);
@@ -21,6 +21,7 @@ public class Manager extends Employee {
 		System.out.println("Numer telefonu: " + phoneNmber);
 		System.out.println("Numer telefonu komórkowego: " + mobilePhoneNmber);
 		System.out.println("Numer pokoju: "+ roomNumber);
+		return "Kierownik działu: " + department;
 	}
 
 	public double calculateSalary () {

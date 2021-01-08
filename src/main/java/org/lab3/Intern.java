@@ -9,10 +9,11 @@ public class Intern extends Employee {
 	public Intern(String name, String surname, String birtdate) {
 		super(name, surname, birtdate);
 	}
-	public void getInformation() {
+	public String getInformation() {
 		super.getInformation();
 		System.out.println("Opiekun: " + manager);
 		System.out.println("Stypendium?: " + (scholarship ? "Tak" : "Nie"));
+		return "Opiekun: " + manager +"Stypendium?: " + (scholarship ? "Tak" : "Nie");
 	};
 
 	public double calculateSalary () {

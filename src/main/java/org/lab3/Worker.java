@@ -12,7 +12,7 @@ public class Worker extends Employee {
 	public Worker(String name, String surname, String birtdate) {
 		super(name, surname, birtdate);
 	}
-	public void getInformation() {
+	public String getInformation() {
 		super.getInformation();
 		System.out.println("Kierownik: " + manager);
 		System.out.println("Stawka godzinowa: " + hourlyRate);
@@ -22,6 +22,7 @@ public class Worker extends Employee {
 		for (String string : skills) {
 			System.out.println(string);
 		}
+		return "Kierownik: " + manager;
 	};
 
 	public double calculateSalary () {
